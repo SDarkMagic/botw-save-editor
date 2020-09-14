@@ -16,14 +16,17 @@ gamedatafile.close()
 def parseSave(savefile_folder, skip_bools=False):
     header = parseSaveFile(savefile_folder + '/caption.sav', skip_bools)
     main_data = parseSaveFile(savefile_folder + '/game_data.sav', skip_bools)
-    date = datetime.datetime.fromtimestamp(header['LastSaveTime_Lower']).strftime('%Y-%m-%d %H:%M:%S')
+    try:
+        date = datetime.datetime.fromtimestamp(header['LastSaveTime_Lower']).strftime('%Y-%m-%d %H:%M:%S')
+    except:
+        date = 'error'
     return {'DATE':date, 'HEADER':header, 'MAIN':main_data}
     
 def parseSaveFile(savefile, skip_bools=False):
     f = open(savefile,'rb')
     data = f.read()
     f.close()
-    assert data[4:0xC] == b'\xff\xff\xff\xff\x00\x00\x00\x01'
+    assert data[4:0xC] == b'\xff\xff\xff\xff\x01\x00\x00\x00'
     assert data[-4:] == b'\xff\xff\xff\xff'
 
     parsed_data = {}
