@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: botw-save-editor
+Version: 1.0.0
+Summary: A program for converting data between JSON and .sav file formats.
+Home-page: https://github.com/SDarkMagic/botew-save-editor
+Author: SDarkMagic
+Author-email: TheSDarkMagic@gmail.com
+License: UNKNOWN
+Description: # BotW Save Data Converter
+         Python scripts for converting botw '.sav' files to '.json' files that can be editted.
+         Main part of the code was written by Leoetlino(https://github.com/leoetlino/botw-tools/blob/master/save.py) I just wrote the two scripts accessible from the command line for bulk conversion.
+         <br>
+         Also installable via pip using `pip install botw-save-editor`
+         <br>
+        # Usage
+         Botw save converter comes with two builtin commands:
+         `sav_to_json <pathToSavFile or pathToDir>`
+        `json_to_sav <pathToJsonFile or pathToDir>`
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown

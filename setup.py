@@ -14,10 +14,10 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/SDarkMagic/botew-save-editor",
     include_package_data=True,
-    packages=['save-editor'],
+    packages=['saveEditor'],
 #    package_dir={'bmpm': 'scripts'},
     entry_points={
-        'console_scripts': ['sav_to_json=save-editor.save_to_json:main', 'json_to_save=save-editor.json_to_sav:main']
+        'console_scripts': ['sav_to_json=saveEditor.save_to_json:main', 'json_to_save=saveEditor.json_to_sav:main']
     },
     classifiers=[
         "Programming Language :: Python :: 3",
