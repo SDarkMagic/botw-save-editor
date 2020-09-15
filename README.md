@@ -3,3 +3,8 @@
  Main part of the code was written by Leoetlino(https://github.com/leoetlino/botw-tools/blob/master/save.py) I just wrote the two scripts accessible from the command line for bulk conversion.
  <br>
  Also installable via pip using `pip install botw-save-editor`
+ <br>
+# Usage
+ Botw save converter comes with two builtin commands:
+ `sav_to_json <pathToSavFile or pathToDir>`
+`json_to_sav <pathToJsonFile or pathToDir>`
