@@ -1,4 +1,4 @@
 [console_scripts]
-json_to_save = saveEditor.json_to_sav:main
+json_to_sav = saveEditor.json_to_sav:main
 sav_to_json = saveEditor.sav_to_json:main
 

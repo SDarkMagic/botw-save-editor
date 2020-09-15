@@ -6,7 +6,7 @@ with open("README.md", "r") as desc:
 
 setuptools.setup(
     name="botw-save-editor",
-    version='1.0.2',
+    version='1.0.3',
     author="SDarkMagic",
     author_email="TheSDarkMagic@gmail.com",
     description="A program for converting data between JSON and .sav file formats.",
@@ -17,7 +17,7 @@ setuptools.setup(
     packages=['saveEditor'],
 #    package_dir={'bmpm': 'scripts'},
     entry_points={
-        'console_scripts': ['sav_to_json=saveEditor.sav_to_json:main', 'json_to_save=saveEditor.json_to_sav:main']
+        'console_scripts': ['sav_to_json=saveEditor.sav_to_json:main', 'json_to_sav=saveEditor.json_to_sav:main']
     },
     classifiers=[
         "Programming Language :: Python :: 3",

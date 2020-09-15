@@ -9,7 +9,7 @@ import sys
 class UnknownNodeTypeException(Exception):
     pass
 
-gamedatafile = open('gamedata.json')
+gamedatafile = open('./saveEditor/lib/gamedata.json')
 gamedata = json.load(gamedatafile)
 gamedatafile.close()
 
