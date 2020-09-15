@@ -6,5 +6,7 @@
  <br>
 # Usage
  Botw save converter comes with two builtin commands:
+ <br>
  `sav_to_json <pathToSavFile or pathToDir>`
+ <br>
 `json_to_sav <pathToJsonFile or pathToDir>`

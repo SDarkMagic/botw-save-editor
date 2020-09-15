@@ -5,11 +5,13 @@ import struct
 import json
 import datetime
 import sys
+import pathlib
 
 class UnknownNodeTypeException(Exception):
     pass
 
-gamedatafile = open('./saveEditor/lib/gamedata.json')
+dataPath = os.path.dirname(os.path.realpath(__file__))
+gamedatafile = open(pathlib.Path(f'{dataPath}/lib/gamedata.json'))
 gamedata = json.load(gamedatafile)
 gamedatafile.close()
 

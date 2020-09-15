@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: botw-save-editor
-Version: 1.0.3
+Version: 1.0.4
 Summary: A program for converting data between JSON and .sav file formats.
 Home-page: https://github.com/SDarkMagic/botew-save-editor
 Author: SDarkMagic
@@ -14,7 +14,9 @@ Description: # BotW Save Data Converter
          <br>
         # Usage
          Botw save converter comes with two builtin commands:
+         <br>
          `sav_to_json <pathToSavFile or pathToDir>`
+         <br>
         `json_to_sav <pathToJsonFile or pathToDir>`
         
 Platform: UNKNOWN

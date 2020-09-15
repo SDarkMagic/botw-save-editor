@@ -1,3 +1,4 @@
+MANIFEST.in
 README.md
 setup.py
 botw_save_editor.egg-info/PKG-INFO
@@ -11,3 +12,4 @@ saveEditor/json_to_sav.py
 saveEditor/sav_to_json.py
 saveEditor/save.py
 saveEditor/util.py
+saveEditor/lib/gamedata.json

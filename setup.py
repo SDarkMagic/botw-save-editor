@@ -6,7 +6,7 @@ with open("README.md", "r") as desc:
 
 setuptools.setup(
     name="botw-save-editor",
-    version='1.0.3',
+    version='1.0.5',
     author="SDarkMagic",
     author_email="TheSDarkMagic@gmail.com",
     description="A program for converting data between JSON and .sav file formats.",
