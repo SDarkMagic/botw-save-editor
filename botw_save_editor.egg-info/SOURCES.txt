@@ -1,0 +1,12 @@
+README.md
+setup.py
+botw_save_editor.egg-info/PKG-INFO
+botw_save_editor.egg-info/SOURCES.txt
+botw_save_editor.egg-info/dependency_links.txt
+botw_save_editor.egg-info/entry_points.txt
+botw_save_editor.egg-info/requires.txt
+botw_save_editor.egg-info/top_level.txt
+saveEditor/json_to_sav.py
+saveEditor/sav_to_json.py
+saveEditor/save.py
+saveEditor/util.py
