@@ -1,9 +1,9 @@
 import argparse
 import pathlib
 import json
-import util
+from saveEditor import util
 import os
-import save
+from saveEditor import save
 
 def main():
     print('Converting JSON files to .sav files for BotW!')

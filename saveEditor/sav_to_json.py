@@ -1,8 +1,8 @@
 import argparse
 import pathlib
 import json
-import util
-import save
+from saveEditor import util
+from saveEditor import save
 
 def main():
     print('Converting .sav files to JSON data!')

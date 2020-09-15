@@ -6,6 +6,7 @@ botw_save_editor.egg-info/dependency_links.txt
 botw_save_editor.egg-info/entry_points.txt
 botw_save_editor.egg-info/requires.txt
 botw_save_editor.egg-info/top_level.txt
+saveEditor/__init__.py
 saveEditor/json_to_sav.py
 saveEditor/sav_to_json.py
 saveEditor/save.py
