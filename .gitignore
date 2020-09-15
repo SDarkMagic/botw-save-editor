@@ -1,0 +1,6 @@
+dist/
+build/
+.vscode/
+pipUpload.bat
+botw-save-editor.egg-info/
+save-editor/__pycache__/
