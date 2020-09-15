@@ -16,18 +16,18 @@ gamedatafile.close()
 def parseSave(savefile_folder, skip_bools=False):
     header = parseSaveFile(savefile_folder + '/caption.sav', skip_bools)
     main_data = parseSaveFile(savefile_folder + '/game_data.sav', skip_bools)
-    try:
-        date = datetime.datetime.fromtimestamp(header['LastSaveTime_Lower']).strftime('%Y-%m-%d %H:%M:%S')
-    except:
-        date = 'error'
+    date = datetime.datetime.fromtimestamp(header['LastSaveTime_Lower']).strftime('%Y-%m-%d %H:%M:%S')
     return {'DATE':date, 'HEADER':header, 'MAIN':main_data}
     
 def parseSaveFile(savefile, skip_bools=False):
     f = open(savefile,'rb')
     data = f.read()
     f.close()
-    assert data[4:0xC] == b'\xff\xff\xff\xff\x01\x00\x00\x00'
-    assert data[-4:] == b'\xff\xff\xff\xff'
+    try:
+        assert data[4:0xC] == b'\xff\xff\xff\xff\x00\x00\x00\x01'
+        assert data[-4:] == b'\xff\xff\xff\xff'
+    except:
+        return(None)
 
     parsed_data = {}
 
@@ -131,9 +131,11 @@ def writeSaveFile(json_data, savefile):
     f = open(savefile,'rb')
     data = list(f.read())
     f.close()
-
-    assert data[4:0xC] == list(b'\xff\xff\xff\xff\x00\x00\x00\x01')
-    assert data[-4:] == list(b'\xff\xff\xff\xff')
+    try:
+        assert data[4:0xC] == list(b'\xff\xff\xff\xff\x00\x00\x00\x01')
+        assert data[-4:] == list(b'\xff\xff\xff\xff')
+    except:
+        return(None)
 
     i = 0xC
     while i < len(data)-4:
@@ -208,9 +210,7 @@ def writeSaveFile(json_data, savefile):
         else:
             print('%08X'%hashvalue, hashvalue, datatype, name)
             raise UnknownNodeTypeException(datatype)
-    f = open(savefile,'wb')
-    f.write(bytes(data))
-    f.close()
+    return(data)
 
 if __name__ == '__main__':
     if 2 <= len(sys.argv) <= 3 and os.path.isdir(sys.argv[1]):
