@@ -1,6 +1,4 @@
-import xml.etree.ElementTree as ET
 import os
-import pprint
 import struct
 import json
 import datetime
