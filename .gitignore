@@ -4,3 +4,6 @@ build/
 pipUpload.bat
 botw_save_editor.egg-info/
 saveEditor/__pycache__/
+*.pyc
+*.exe
+PKG-INFO
