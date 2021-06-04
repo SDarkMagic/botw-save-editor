@@ -1,1 +1,2 @@
 include saveEditor/lib/gamedata.json
+include saveEditor/__version__.txt
