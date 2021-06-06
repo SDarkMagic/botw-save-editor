@@ -1,3 +1,0 @@
-pathlib
-struct
-argparse
